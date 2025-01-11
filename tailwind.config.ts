@@ -11,7 +11,6 @@ export default {
     themes: [
       {
         ruminate: {
-
           "primary": "#790e4a",
           "primary-content": "#f7cbc0",
           "secondary": "#11639a",
