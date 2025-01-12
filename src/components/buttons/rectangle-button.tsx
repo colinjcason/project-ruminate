@@ -59,7 +59,7 @@ const RectangleButton: React.FC<RectangleButtonProps> = ({
   return (
     <button
       onClick={onClick}
-      className={`inline-flex items-center flex-shrink-0 gap-[8px] ${className ?? ''}`}
+      className={`inline-flex items-center justify-center gap-[8px] flex-shrink-0 ${className ?? ''}`}
       style={{
         display: 'inline-flex',
         height: 'var(--t-spacing-11, 44px)',
@@ -85,7 +85,17 @@ const RectangleButton: React.FC<RectangleButtonProps> = ({
       />
 
       {/* Button label */}
-      <span>{label}</span>
+      <span
+        style={{
+          fontFamily: 'var(--t-font-family-theme-primary, "Tailwind")',
+          fontSize: 'var(--t-font-size-xl, 20px)', // Text size is now "text-xl"
+          fontWeight: 'var(--t-font-weight-bold, 700)', // Bold weight
+          lineHeight: 'var(--t-font-lineHeight-leading-6, 24px)', // Matches leading-6
+          color: 'var(--d-color-semantic-neutral-content, #1F2739)',
+        }}
+      >
+        {label}
+      </span>
 
       {/* Icon on the right */}
       <img
