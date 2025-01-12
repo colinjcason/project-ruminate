@@ -21,18 +21,12 @@ const SmallRectangleButton: React.FC<SmallRectangleButtonProps> = ({
         padding: 'var(--t-spacing-0, 0px) var(--t-spacing-2, 8px)',
         justifyContent: 'center',
         alignItems: 'center',
-        gap: 'var(--t-spacing-2, 8px)',
         borderRadius: 'var(--d-borderRadius-btn-xs, 4px)',
         border: 'var(--d-borderWidth-btn, 2px) solid var(--d-color-semantic-neutral-content, #1F2739)',
-        background: 'var(--d-color-semantic-neutral-bg, #FAF5F1)',
+        background:
+          'var(--d-color-semantic-neutral-bg, #FAF5F1) var(--d-color-semantic-neutral-bg, color(display-p3 0.9725 0.9608 0.9451))',
         boxShadow: `1px 2px 0px 0px #000, 
                     1px 4px 0px 0px #000`,
-        fontFamily: 'var(--t-font-family-theme-primary, "Roboto Flex")',
-        fontSize: 'var(--t-font-size-sm, 14px)',
-        fontWeight: 'var(--t-font-weight-bold, 700)',
-        lineHeight: 'var(--t-font-lineHeight-leading-5, 20px)',
-        textAlign: 'center',
-        color: 'var(--d-color-semantic-neutral-content, #1F2739)',
       }}
     >
       {/* Icon on the left */}
@@ -40,21 +34,31 @@ const SmallRectangleButton: React.FC<SmallRectangleButtonProps> = ({
         src="/h-icon/solid/heart.svg"
         alt="Heart Icon Left"
         style={{
-          width: 'var(--t-spacing-35, 14px)',
-          height: 'var(--t-spacing-35, 14px)',
+          width: '14px',
+          height: '14px',
         }}
       />
 
-      {/* Label */}
-      <span>{label}</span>
+      {/* Button label */}
+      <span
+        style={{
+          fontFamily: 'var(--t-font-family-theme-primary, "Tailwind")',
+          fontSize: 'var(--t-font-size-sm, 14px)', // Text size is now "text-sm"
+          fontWeight: 'var(--t-font-weight-bold, 700)', // Bold weight
+          lineHeight: 'var(--t-font-lineHeight-leading-5, 20px)', // Matches leading-5
+          color: 'var(--d-color-semantic-neutral-content, #1F2739)',
+        }}
+      >
+        {label}
+      </span>
 
       {/* Icon on the right */}
       <img
         src="/h-icon/solid/heart.svg"
         alt="Heart Icon Right"
         style={{
-          width: 'var(--t-spacing-35, 14px)',
-          height: 'var(--t-spacing-35, 14px)',
+          width: '14px',
+          height: '14px',
         }}
       />
     </button>
