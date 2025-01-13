@@ -1,3 +1,7 @@
+import { CapsuleButton } from "@/components/buttons/capsule-buttons/capsule-button";
+import { CapsuleButtonPlainBG } from "@/components/buttons/capsule-buttons/capsule-button-whiteBG";
+import { RoundButton } from "@/components/buttons/round-buttons/round-button";
+import { RoundButtonPlainBG } from "@/components/buttons/round-buttons/round-button-whiteBG";
 import Image from "next/image";
 
 export default function Home() {
