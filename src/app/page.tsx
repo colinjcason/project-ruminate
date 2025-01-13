@@ -4,6 +4,7 @@ import RectangleButton from "../components/buttons/rectangle-button";
 import SmallRectangleButton from "../components/buttons/small-rectangle-button";
 import SmallSquareButton from "../components/buttons/small-square-button";
 import LargeSquareButton from "../components/buttons/square-button";
+import DynamicRectangleButton from "../components/buttons/update-rectangle-button";
 
 export default function HomePage() {
   return (
@@ -25,11 +26,23 @@ export default function HomePage() {
         onClick={() => alert('Button Clicked!')} 
       /> 
        <br/>
-       {/* <SmallSquareButton onClick={() => alert('Heart Clicked!')} /> */}
-        <br/>
         <LargeSquareButton 
         onClick={() => alert('Button Clicked!')} 
       /> 
+      <br/>
+
+      //dynamic button 
+ <DynamicRectangleButton
+  label="Neutral Button"
+  bgColor="var(--d-color-semantic-neutral-bg, #FAF5F1)"
+  textColor="var(--d-color-semantic-neutral-content, #1F2739)"
+  iconColor="var(--d-color-semantic-neutral-content, #1F2739)"
+  outlineColor="var(--d-color-semantic-neutral-content, #1F2739)"
+  size="lg"
+  noOutline={false} // Ensure border and shadow are applied
+  className="text-xl font-bold leading-7"
+  onClick={() => console.log("Neutral Button Clicked")}
+/>
     </main>
   );
 }
