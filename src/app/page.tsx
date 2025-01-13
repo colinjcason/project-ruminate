@@ -31,7 +31,7 @@ export default function HomePage() {
       /> 
       <br/>
 
-      //dynamic button 
+  {/* dynamic button  */}
  <DynamicRectangleButton
   label="Neutral Button"
   bgColor="var(--d-color-semantic-neutral-bg, #FAF5F1)"
