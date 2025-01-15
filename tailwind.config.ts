@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import daisyui from 'daisyui';
+import daisyui from "daisyui";
 
 export default {
   content: [
@@ -7,17 +7,24 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  theme: {
+    extend: {
+      boxShadow: {
+        "solid-black": "1px 2px black",
+      },
+    },
+  },
   daisyui: {
     themes: [
       {
         ruminate: {
-          "primary": "#790e4a",
+          primary: "#790e4a",
           "primary-content": "#f7cbc0",
-          "secondary": "#11639a",
+          secondary: "#11639a",
           "secondary-content": "#def7ea",
-          "accent": "#563058",
+          accent: "#563058",
           "accent-content": "#f8f5f1",
-          "neutral": "#f8f5f1",
+          neutral: "#f8f5f1",
           "neutral-content": "#222737",
           "base-0": "#ffffff",
           "base-100": "#f6f6f8",
@@ -31,25 +38,25 @@ export default {
           "base-900": "#3A3E4C",
           "base-1000": "#000000",
           "base-content": "#222737",
-          "info": "#563058",
+          info: "#563058",
           "info-content": "#f8f5f1",
-          "success": "#7eb672",
+          success: "#7eb672",
           "success-content": "#222737",
-          "warning": "#fba63a",
+          warning: "#fba63a",
           "warning-content": "#222737",
-          "error": "#D93226",
+          error: "#D93226",
           "error-content": "#222737",
         },
       },
       {
         ruminatedark: {
-          "primary": "#f7cbc0",
+          primary: "#f7cbc0",
           "primary-content": "#790e4a",
-          "secondary": "#def7ea",
+          secondary: "#def7ea",
           "secondary-content": "#11639a",
-          "accent": "#f8f5f1",
+          accent: "#f8f5f1",
           "accent-content": "#563058",
-          "neutral": "#222737",
+          neutral: "#222737",
           "neutral-content": "#f8f5f1",
           "base-0": "#000000",
           "base-100": "#80838D",
@@ -63,19 +70,17 @@ export default {
           "base-900": "#AFB1B8",
           "base-1000": "#ffffff",
           "base-content": "#222737",
-          "info": "#563058",
+          info: "#563058",
           "info-content": "#f8f5f1",
-          "success": "#7eb672",
+          success: "#7eb672",
           "success-content": "#222737",
-          "warning": "#fba63a",
+          warning: "#fba63a",
           "warning-content": "#222737",
-          "error": "#D93226",
+          error: "#D93226",
           "error-content": "#222737",
-        }
-      }
+        },
+      },
     ],
   },
-  plugins: [
-    daisyui
-  ],
+  plugins: [daisyui],
 } satisfies Config;
