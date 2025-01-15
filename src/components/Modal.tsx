@@ -5,10 +5,16 @@ import { XmarkIcon } from "./icons";
 type Props = {
   title: string;
   body: string;
-  slot?: React.ReactElement;
+  slotAlignment?: "justify-start" | "justify-center" | "justify-end";
+  children: React.ReactNode;
 };
 
-function Modal({ title, body, slot = <></> }: Props) {
+function Modal({
+  title,
+  body,
+  slotAlignment = "justify-end",
+  children,
+}: Props) {
   return (
     <>
       <button
@@ -19,15 +25,15 @@ function Modal({ title, body, slot = <></> }: Props) {
       </button>
       <dialog id="my_modal_2" className="modal">
         <div className="modal-box p-8 rounded-2xl border-2 border-black shadow-solid-black">
-          <form method="dialog" className="absolute top-2 right-2">
+          <form method="dialog" className="absolute top-4 right-4">
             <button>
               <XmarkIcon height={20} width={20} />
             </button>
           </form>
           <h3 className="font-bold text-lg">{title}</h3>
           <p className="py-4">{body}</p>
+          <div className={"flex pt-4 " + slotAlignment}>{children}</div>
         </div>
-        {slot}
         <form method="dialog" className="modal-backdrop">
           <button>close</button>
         </form>

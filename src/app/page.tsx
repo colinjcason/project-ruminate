@@ -3,7 +3,13 @@ import Modal from "../components/Modal";
 export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Modal title="Hello!" body="This is the body of my modal." />
+      <Modal
+        title="Hello!"
+        body="This is the body of my modal."
+        slotAlignment="justify-end"
+      >
+        <button className="bg-green-400 p-2 rounded-lg">Click Me!</button>
+      </Modal>
     </div>
   );
 }
