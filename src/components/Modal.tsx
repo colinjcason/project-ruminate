@@ -19,11 +19,19 @@ function Modal({
     <>
       <button
         className="btn"
-        onClick={() => document.getElementById("my_modal_2").showModal()}
+        onClick={() => {
+          const myModal = document.getElementById(
+            "my_modal_1"
+          ) as HTMLDialogElement;
+
+          if (!myModal) return;
+
+          myModal.showModal();
+        }}
       >
         open modal
       </button>
-      <dialog id="my_modal_2" className="modal">
+      <dialog id="my_modal_1" className="modal">
         <div className="modal-box p-8 rounded-2xl border-2 border-black shadow-solid-black">
           <form method="dialog" className="absolute top-4 right-4">
             <button>
