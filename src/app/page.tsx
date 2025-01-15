@@ -5,6 +5,7 @@ import SmallRectangleButton from "../components/buttons/small-rectangle-button";
 import SmallSquareButton from "../components/buttons/small-square-button";
 import LargeSquareButton from "../components/buttons/square-button";
 import DynamicRectangleButton from "../components/buttons/update-rectangle-button";
+import DynamicSquareButton from "../components/buttons/update-square-button";
 
 export default function HomePage() {
   return (
@@ -33,7 +34,7 @@ export default function HomePage() {
 
   {/* dynamic button  */}
  <DynamicRectangleButton
-  label="Neutral Button"
+  label="Button"
   bgColor="var(--d-color-semantic-neutral-bg, #FAF5F1)"
   textColor="var(--d-color-semantic-neutral-content, #1F2739)"
   iconColor="var(--d-color-semantic-neutral-content, #1F2739)"
@@ -42,6 +43,36 @@ export default function HomePage() {
   noOutline={false} // Ensure border and shadow are applied
   className="text-xl font-bold leading-7"
   onClick={() => console.log("Neutral Button Clicked")}
+/>
+<br />
+<DynamicSquareButton
+  size="lg"
+  onClick={() => console.log("Large button clicked")}
+/>
+<br />
+<DynamicSquareButton
+  size="sm"
+  bgColor="#FF5733"
+  iconColor="#FFD700"
+  outlineColor="#FF0000"
+  onClick={() => console.log("Small button clicked")}
+/>
+<br />
+<DynamicSquareButton
+  size="md"
+  bgColor="#0066FF"
+  iconColor="#FFFFFF"
+  noOutline={true}
+  onClick={() => console.log("Button without outline clicked")}
+/>
+
+<br />
+<DynamicSquareButton
+  size="lg"
+  bgColor="white"
+  iconColor="black"
+  noOutline={true} // Removes border and shadow
+  onClick={() => console.log("No-outline button clicked")}
 />
     </main>
   );

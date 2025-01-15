@@ -1,48 +1,4 @@
 
-// import React from 'react';
-
-// interface RectangleButtonProps {
-//   label: string; // Button label
-//   onClick?: () => void; // Optional click handler
-//   className?: string; // Additional Tailwind classes
-// }
-
-// const RectangleButton: React.FC<RectangleButtonProps> = ({
-//   label,
-//   onClick,
-//   className,
-// }) => {
-//   return (
-//     <button
-//       onClick={onClick}
-//       className={`inline-flex items-center h-[44px] px-[16px] py-0 gap-[8px] 
-//         shrink-0 rounded-[12px] border-2 border-neutral-content bg-neutral 
-//         shadow-[1px_2px_0_0_#000,1px_4px_0_0_#000] 
-//         text-black hover:bg-neutral-focus active:shadow-none
-//         ${className ?? ''}`}
-//     >
-//       {/* Icon on the left */}
-//       <img
-//         src="/h-icon/solid/heart.svg"
-//         alt="Heart Icon Left"
-//         className="w-5 h-5"
-//       />
-
-//       {/* Button label */}
-//       <span className="">{label}</span>
-
-//       {/* Icon on the right */}
-//       <img
-//         src="/h-icon/solid/heart.svg"
-//         alt="Heart Icon Right"
-//         className="w-5 h-5"
-//       />
-//     </button>
-//   );
-// };
-
-// export default RectangleButton;
-
 import React from 'react';
 
 interface RectangleButtonProps {
