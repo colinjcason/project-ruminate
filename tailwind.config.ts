@@ -73,9 +73,6 @@ export default {
           "error-content": "#222737",
         },
       },
-      {
-        tokenTheme,
-      },
     ],
   },
   plugins: [daisyui],
