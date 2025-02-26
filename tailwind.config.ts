@@ -1,8 +1,6 @@
 import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
-import tokenTheme from "./Dark.json";
 
-console.log(tokenTheme);
 export default {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
