@@ -3,12 +3,11 @@ import React from "react";
 type Props = {
   title: string;
   body: string;
-  cornerImage?: React.FC;
 };
 
-function Box({ title, body, cornerImage }: Props) {
+function Box({ title, body }: Props) {
   return (
-    <div>
+    <div className="bg-white p-4 text-base-0 rounded-lg shadow-[-6px_6px_0px_0px_#000] border-2 border-black">
       <h3>{title}</h3>
       <p>{body}</p>
     </div>
