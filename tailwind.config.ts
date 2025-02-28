@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss";
 import daisyui from "daisyui";
+import tokenTheme from "./tailwind-tokens-preset";
 
 export default {
   content: [
@@ -7,6 +8,7 @@ export default {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  presets: [tokenTheme],
   daisyui: {
     themes: [
       {
@@ -63,6 +65,7 @@ export default {
           "base-900": "#AFB1B8",
           "base-1000": "#ffffff",
           "base-content": "#222737",
+          "semantic-secondary-100": "#F2FCF7",
           info: "#563058",
           "info-content": "#f8f5f1",
           success: "#7eb672",

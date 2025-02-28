@@ -1,0 +1,124 @@
+{
+  "Background": {
+    "value": "{d-color.base.0}",
+    "type": "color"
+  },
+  "Text": {
+    "Primary": {
+      "value": "{d-color.base.content}",
+      "type": "color"
+    },
+    "Secondary": {
+      "value": "{d-color.base.content}",
+      "type": "color"
+    }
+  },
+  "Artwork background": {
+    "value": "{d-color.base.200}",
+    "type": "color"
+  },
+  "Attributes": {
+    "Icon stroke": {
+      "value": "{d-color.semantic.neutral.bg}",
+      "type": "color"
+    },
+    "Style fill": {
+      "value": "{d-color.base.0}",
+      "type": "color"
+    },
+    "Style stroke": {
+      "value": "{d-color.base.200}",
+      "type": "color"
+    },
+    "Style text": {
+      "value": "{d-color.base.content}",
+      "type": "color"
+    },
+    "Variable stroke": {
+      "value": "{d-color.base.300}",
+      "type": "color"
+    },
+    "Variable fill": {
+      "value": "{d-color.base.0}",
+      "type": "color"
+    },
+    "Variable text": {
+      "value": "{d-color.base.content}",
+      "type": "color"
+    },
+    "Raw value text": {
+      "value": "{d-color.semantic.neutral.bg}",
+      "type": "color"
+    },
+    "Token fill": {
+      "value": "{d-color.base.200}",
+      "type": "color"
+    },
+    "Token text": {
+      "value": "{d-color.semantic.primary.bg}",
+      "type": "color"
+    },
+    "Dependency fill": {
+      "value": "{d-color.base.200}",
+      "type": "color"
+    },
+    "Dependency stroke": {
+      "value": "{d-color.base.300}",
+      "type": "color"
+    },
+    "Dependency text": {
+      "value": "{d-color.base.content}",
+      "type": "color"
+    }
+  },
+  "Annotation": {
+    "Alignment grid": {
+      "value": "{d-color.semantic.neutral.bg}",
+      "type": "color"
+    },
+    "Direction arrow": {
+      "value": "{d-color.semantic.neutral.bg}",
+      "type": "color"
+    },
+    "Element outline": {
+      "value": "{d-color.semantic.primary.bg}",
+      "type": "color"
+    },
+    "Element overlay": {
+      "value": "{d-color.semantic.primary.bg}",
+      "type": "color"
+    },
+    "Item spacing overlay": {
+      "value": "{d-color.status.error.bg}",
+      "type": "color"
+    },
+    "Item size": {
+      "value": "{d-color.status.error.bg}",
+      "type": "color"
+    },
+    "Item spacing line": {
+      "value": "{d-color.status.error.bg}",
+      "type": "color"
+    },
+    "Padding overlay": {
+      "value": "{d-color.status.info.bg}",
+      "type": "color"
+    },
+    "Padding size": {
+      "value": "{d-color.status.info.bg}",
+      "type": "color"
+    },
+    "Padding line": {
+      "value": "{d-color.status.info.bg}",
+      "type": "color"
+    },
+    "Marker fill": {
+      "value": "{d-color.semantic.secondary.bg}",
+      "type": "color"
+    },
+    "Marker text": {
+      "value": "{d-color.semantic.secondary.content}",
+      "type": "color"
+    }
+  }
+}
