@@ -1,4 +1,5 @@
 import Box from "@/components/Box";
+import { LightbulbIcon } from "@/components/icons";
 
 export default function Home() {
   return (
@@ -7,6 +8,7 @@ export default function Home() {
         <Box
           title="Customer Insights"
           body="Evaluators’ feedback represents not just their expertise but also their customers’ needs and preferences."
+          cornerImage={<LightbulbIcon height="12.5rem" width="12.5rem" />}
         />
       </main>
     </div>
