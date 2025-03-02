@@ -5,7 +5,6 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
-  --fontFamilies-roboto-flex: font-family: "Roboto Flex", serif;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -28,9 +27,27 @@ body {
 
 h3 {
   color: var(--d-color-base-1000, #000);
-
   font-size: 2.25rem;
   font-style: normal;
   font-weight: 800;
   line-height: 2.75rem; /* 122.222% */
+}
+
+.big-header-normal {
+  color: var(--d-color-semantic-accent-800, #654367);
+  font-family: var(--font-roboto-flex);
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 3.75rem */
+}
+
+.big-header-wide {
+  color: var(--d-color-semantic-accent-900, #563058);
+  font-family: var(--font-roboto-flex);
+  font-size: 3.75rem;
+  font-weight: 1000;
+  font-stretch: 100%;
+  line-height: 100%; /* 3.75rem */
+  letter-spacing: 0.075rem;
 }

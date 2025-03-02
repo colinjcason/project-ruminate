@@ -1,7 +1,15 @@
 import * as React from "react";
 import { SVGProps } from "react";
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" height="200" fill="black" {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="200"
+    height="200"
+    viewBox="0 0 200 200"
+    fill="black"
+    overflow="visible"
+    {...props}
+  >
     <g filter="url(#a)">
       <path
         fill="#C1E2DF"
