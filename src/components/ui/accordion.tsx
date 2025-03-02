@@ -14,7 +14,7 @@ const Accordion: React.FC<AccordionProps> = ({ title, body, isOpen, onClick }) =
       <div className={`collapse collapse-arrow ${isOpen ? "collapse-open" : ""} bg-secondary border-none`}>
         <input type="checkbox" checked={isOpen} onChange={onClick} />
         <div 
-          className={`collapse-title flex items-center justify-between text-xl font-medium p-4 text-secondary-content bg-secondary
+          className={`collapse-title flex items-center justify-between text-xl font-medium p-[24px] text-secondary-content bg-secondary
           ${isOpen ? "rounded-t-[16px] rounded-b-none" : "rounded-[16px]"} w-full b`}
         >
           {title}

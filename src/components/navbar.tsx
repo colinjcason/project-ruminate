@@ -1,11 +1,4 @@
 import Link from "next/link";
-import FLogo from "./logo/Flogo";
-import ELogo from "./logo/Elogo";
-import KLogo from "./logo/Klogo";
-import RightLogo from "./logo/RightLogo";
-import ALogo from "./logo/ALogo";
-import CLogo from "./logo/CLogo";
-import BLogo from "./logo/BLogo";
 import FeedkcabLogo from "./logo/FeedkcabLogo";
 
 
