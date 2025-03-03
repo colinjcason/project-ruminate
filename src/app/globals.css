@@ -5,6 +5,21 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --font-roboto-flex: "Roboto Flex";
+}
+
+/* latin */
+@font-face {
+  font-family: "Roboto Flex";
+  font-style: normal;
+  font-weight: 100 1000;
+  font-stretch: 200%;
+  src: url(https://fonts.gstatic.com/s/robotoflex/v27/NaN4epOXO_NexZs0b5QrzlOHb8wCikXpYqmZsWI-__OGbt8jZktqc2V3Zs0KvDLdBP8SBZtOs2IifRuUZQMsPJtUsR4DEK6cULNeUx9XgTnH37Ha_FIAp4Fm0PP1hw45DntW2x0wZGzhPmr1YNMYKYn9_1IQXGwJAiUJVUMdN5YUW4O8HtSoXjC1z3QSabshNFVe3e0O5j3ZjrZCu23Qd4G0EBysQNK-QKavMl12JoUc5-TkjA.woff2)
+    format("woff2");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,8 +32,6 @@
 body {
   background: var(--background);
   color: var(--d-color-semantic-neutral-content, #222737);
-
-  font-family: "Roboto Flex", serif;
   font-size: var(--fontSize-4, 1.25rem);
   font-style: normal;
   font-weight: 400;
@@ -34,20 +47,26 @@ h3 {
 }
 
 .big-header-normal {
-  color: var(--d-color-semantic-accent-800, #654367);
-  font-family: var(--font-roboto-flex);
+  color: var(--d-color-semantic-accent-900, #563058);
+  font-size: 3.75rem;
   font-style: normal;
   font-weight: 800;
   line-height: 100%; /* 3.75rem */
+  letter-spacing: 0.025rem;
   @apply text-4xl sm:text-6xl;
 }
 
 .big-header-wide {
   color: var(--d-color-semantic-accent-900, #563058);
-  font-family: var(--font-roboto-flex);
+  font-stretch: 125%;
+  font-size: 3.75rem;
   font-weight: 1000;
-  font-stretch: 100%;
   line-height: 100%; /* 3.75rem */
   letter-spacing: 0.075rem;
   @apply text-4xl sm:text-6xl;
+}
+
+.roboto-flex-wide {
+  font-weight: 900;
+  font-stretch: 125%;
 }
