@@ -1,0 +1,15 @@
+{
+  "tokenSetOrder": [
+    "Light",
+    "Dark",
+    "wireframe",
+    "🌼daisyUI/Ruminate",
+    "🌼daisyUI/RuminateDark",
+    "🛠️ utilities/⚒️ utilities",
+    "_📋doc/Mode 1",
+    "_EightShapes Specs/Light",
+    "🎨 themes/values",
+    "🔤 typography/Variable",
+    "🌀tailwind/💨 Tailwind"
+  ]
+}
