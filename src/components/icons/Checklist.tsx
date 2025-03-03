@@ -3,11 +3,12 @@ import { SVGProps } from "react";
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
-    width="200"
-    height="200"
-    viewBox="0 0 200 200"
-    fill="black"
-    overflow="visible"
+    height="150"
+    fill="none"
+    style={{
+      maxHeight: 500,
+    }}
+    viewBox="40.562 34.572 113.253 137.082"
     {...props}
   >
     <g filter="url(#a)">
