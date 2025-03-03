@@ -22,6 +22,205 @@ body {
   font-family: Arial, Helvetica, sans-serif, roboto-flex;
 }
 
+h3 {
+  color: var(--d-color-base-1000, #000);
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 2.75rem; /* 122.222% */
+}
+
+.big-header-normal {
+  color: var(--d-color-semantic-accent-800, #654367);
+  font-family: var(--font-roboto-flex);
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 3.75rem */
+}
+
+.big-header-wide {
+  color: var(--d-color-semantic-accent-900, #563058);
+  font-family: var(--font-roboto-flex);
+  font-size: 3.75rem;
+  font-weight: 1000;
+  font-stretch: 100%;
+  line-height: 100%; /* 3.75rem */
+  letter-spacing: 0.075rem;
+}
+
+/* Main Page */
+.homepage {
+  display: flex;
+  width: 1280px;
+  padding-bottom: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  
+
+}
+
+/* Main Content */
+.main-content {
+  flex: 1;
+  position: relative;
+  background-color: #11639a;
+  overflow: hidden;
+  
+}
+
+/* Hero Section */
+.hero-section {
+  padding-top: 52px;
+  
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1280px;
+  padding-bottom: 5px;
+  padding-top: 16px;
+  /* padding-left: 30px; */
+  margin: 0 auto;
+}
+
+.hero-content {
+  display: flex;
+  align-items: start;
+  gap: -40px;
+  width: 100%;
+}
+
+.text-container {
+  flex: 1;
+  padding-right: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+/* Headings */
+.hero-heading {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  white-space: nowrap;
+}
+
+.hero-for {
+  color: var(--d-color-base-0, #fff);
+  font-family: "Roboto Flex";
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 100%; /* 72px */
+  letter-spacing: -1.44px;
+  padding-left: 80px;
+  margin-top: -30px;
+}
+
+.hero-producers {
+  color: var(--d-color-base-0, #fff);
+  font-family: "Roboto Flex";
+  font-size: 82px;
+  font-style: normal;
+  font-weight: 1000;
+  line-height: 100%; /* 72px */
+  letter-spacing: 1.44px;
+  margin-top: -30px;
+}
+
+
+.hero-by {
+  display: block;
+  color: var(--d-color-base-0, #fff);
+  font-family: "Roboto Flex";
+  font-size: 72px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -1.44px;
+  margin-top: -24px;
+  padding-left: 80px;
+}
+/* Subtext */
+.hero-subtext {
+  color: #fff;
+  font-family: "Roboto Flex";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: var(--lineHeights-9, 36px);
+  margin-top: 10px;
+  padding-left: 80px;
+
+}
+
+/* Fix any duplicate button rendering */
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--t-spacing-11, 44px);
+  padding: var(--t-spacing-0, 0px) var(--t-spacing-4, 16px);
+  gap: var(--t-spacing-2, 8px);
+  border-radius: var(--d-borderRadius-btn, 12px);
+  border: var(--d-borderWidth-btn, 2px) solid var(--d-color-semantic-neutral-content, #222737);
+  background: var(--d-color-base-200, #DEDFE3);
+  box-shadow: 1px 2px 0px 0px #000, 1px 4px 0px 0px #000;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-left: 80px;
+}
+
+.hero-button:hover {
+  background: #cfd0d5;
+}
+
+.hero-button.no-outline {
+  box-shadow: 1px 2px 0px 0px #000, 
+  1px 4px 0px 0px #000;
+}
+
+/* Button Text */
+.hero-button-text {
+  color: var(--d-color-base-content, #222737);
+  text-align: center;
+  font-family: var(--t-font-family-theme-primary, "Roboto Flex");
+  font-size: var(--t-font-size-xl, 20px);
+  font-weight: var(--t-font-weight-bold, 700);
+  line-height: var(--t-font-lineHeight-leading-7, 28px);
+}
+
+/* Button Arrow */
+.hero-button svg {
+  width: var(--t-spacing-5, 20px);
+  height: var(--t-spacing-5, 20px);
+}
+
+
+
+
+/* Carousel */
+.carousel-container {
+  flex: 1;
+  position: relative;
+  padding-top: 52px;
+  padding-bottom: 52px;
+  margin-right: -265px;
+}
+
+/* Banner Wrapper */
+.banner-wrapper {
+  padding-bottom: 20px;
+}
+
+
+
+
+
 /* 🔹 Fork Banner */
 .fork-banner {
   width: 100vw;
@@ -30,6 +229,7 @@ body {
   align-items: center;
   background-color: #F2FCF7;
   overflow: hidden;
+  margin-top: 52px;
 }
 
 /* 🔹 Fork Banner Content */
@@ -106,4 +306,90 @@ body {
   .fork-banner-text {
     font-size: 9px;
   }
+}
+
+
+/* Carousel Container */
+.carousel-container {
+  width: 441.091px;
+  height: 499.311px;
+  flex-shrink: 0;
+  position: relative;
+  margin-top: -40px;
+}
+
+/* Background Blob */
+.carousel-blob {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 441.091px;
+  height: 499.311px;
+  flex-shrink: 0;
+}
+
+/* Image Container */
+.carousel-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+}
+
+/* Individual Image Slide */
+.carousel-slide {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+}
+
+.carousel-slide.inactive {
+  opacity: 0;
+}
+
+/* Image Styling */
+.carousel-image {
+  width: 377px;
+  height: 472px;
+  background:lightgray -257.617px -14.942px / 208.333% 111.131% no-repeat;
+  aspect-ratio: 377 / 472;
+  object-fit: contain;
+  margin-top: -16px; /* Allows head overflow */
+}
+
+/* Dots Navigation */
+.carousel-dots {
+  position: absolute;
+  bottom: 2px;
+  right: 215px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 36px;
+  
+}
+
+/* Individual Dot */
+.carousel-dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Active Dot */
+.carousel-dot.active-dot {
+  background-color: #86b8c8;
+}
+
+/* Inactive Dot */
+.carousel-dot.inactive-dot {
+  background-color: #989aa2;
 }
