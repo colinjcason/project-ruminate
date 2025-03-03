@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 :root {
   --background: #ffffff;
@@ -20,5 +19,91 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif, roboto-flex;
+}
+
+/* 🔹 Fork Banner */
+.fork-banner {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #F2FCF7;
+  overflow: hidden;
+}
+
+/* 🔹 Fork Banner Content */
+.fork-banner-content {
+  display: flex;
+  height: 50px;
+  padding: 8px 0;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  font-family: 'Roboto Flex', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 12px;
+  color: #563058;
+  justify-content: space-between; /* Ensures even spacing */
+}
+
+/* 🔹 Each Set of (Icon + Text) */
+.fork-banner-set {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: clamp(8px, 2vw, 32px);
+}
+
+/* 🔹 Single Icon + Text Pair */
+.fork-banner-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: clamp(90px, 10vw, 135px);
+}
+
+/* 🔹 Text is now evenly spaced between images */
+.fork-banner-text {
+  flex: 1; /* Ensures text takes up equal space */
+  text-align: center;
+}
+
+/* 📱 Responsive Adjustments */
+@media (max-width: 1024px) {  /* Tablets */
+  .fork-banner-content {
+    gap: 16px;
+  }
+  .fork-banner-item {
+    width: clamp(80px, 8vw, 110px);
+  }
+  .fork-banner-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 768px) {  /* Mobile */
+  .fork-banner-content {
+    gap: 12px;
+  }
+  .fork-banner-item {
+    width: clamp(70px, 7vw, 90px);
+  }
+  .fork-banner-text {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {  /* Small Mobile */
+  .fork-banner-content {
+    gap: 8px;
+  }
+  .fork-banner-item {
+    width: clamp(60px, 6vw, 75px);
+  }
+  .fork-banner-text {
+    font-size: 9px;
+  }
 }
