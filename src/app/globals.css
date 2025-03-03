@@ -36,18 +36,18 @@ h3 {
 .big-header-normal {
   color: var(--d-color-semantic-accent-800, #654367);
   font-family: var(--font-roboto-flex);
-  font-size: 3.75rem;
   font-style: normal;
   font-weight: 800;
   line-height: 100%; /* 3.75rem */
+  @apply text-4xl sm:text-6xl;
 }
 
 .big-header-wide {
   color: var(--d-color-semantic-accent-900, #563058);
   font-family: var(--font-roboto-flex);
-  font-size: 3.75rem;
   font-weight: 1000;
   font-stretch: 100%;
   line-height: 100%; /* 3.75rem */
   letter-spacing: 0.075rem;
+  @apply text-4xl sm:text-6xl;
 }
