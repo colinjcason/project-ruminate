@@ -1,5 +1,4 @@
 import React from "react";
-import Arrow from "@/components/ui/Arrow";
 
 type AccordionProps = {
   title: string;
@@ -8,12 +7,19 @@ type AccordionProps = {
   onClick: () => void;
 };
 
-const Accordion: React.FC<AccordionProps> = ({ title, body, isOpen, onClick }) => {
+const Accordion: React.FC<AccordionProps> = ({
+  title,
+  body,
+  isOpen,
+  onClick,
+}) => {
   return (
     <div className="w-[764px] border-2 border-black rounded-[16px] overflow-hidden">
-      <div className={`collapse collapse-arrow ${isOpen ? "collapse-open" : ""} bg-secondary border-none`}>
+      <div
+        className={`collapse collapse-arrow ${isOpen ? "collapse-open" : ""} bg-secondary border-none`}
+      >
         <input type="checkbox" checked={isOpen} onChange={onClick} />
-        <div 
+        <div
           className={`collapse-title flex items-center justify-between text-xl font-medium p-[24px] text-secondary-content bg-secondary
           ${isOpen ? "rounded-t-[16px] rounded-b-none" : "rounded-[16px]"} w-full b`}
         >
@@ -30,9 +36,6 @@ const Accordion: React.FC<AccordionProps> = ({ title, body, isOpen, onClick }) =
 };
 
 export default Accordion;
-
-
-
 
 // import React from "react";
 // import Arrow from "@/components/ui/Arrow";

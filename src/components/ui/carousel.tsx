@@ -21,23 +21,6 @@ export function Carousel({ images, interval = 5000 }: CarouselProps) {
 
   return (
     <div className="carousel-container">
-      {/* Background Blob */}
-      <svg
-        className="absolute right-0 top-0"
-        width="541"
-        height="494"
-        viewBox="0 0 541 494"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M297.062 1.50749C346.893 -9.34834 408.554 40.8673 446.534 73.9376C485.155 107.566 449.686 172.253 466.439 219.858C483.621 268.685 545.523 299.269 543.971 350.831C542.323 405.609 510.073 465.847 458.368 488.129C407.037 510.251 352.914 463.153 297.062 457.237C250.338 452.289 130.539 481.977 91.086 457.237C51.3608 432.327 155.743 369.054 139.527 326C122.553 280.933 72.0473 206.669 91.086 162.383C110.231 117.849 143.178 132.082 186.648 108.521C235.546 73.2341 256.123 10.4261 297.062 1.50749Z"
-          fill="#A3CDD3"
-        />
-      </svg>
-
       {/* Image Container */}
       <div className="relative w-full h-full overflow-visible">
         {images.map((src, index) => (
@@ -50,8 +33,9 @@ export function Carousel({ images, interval = 5000 }: CarouselProps) {
             <Image
               src={src || "/placeholder.svg"}
               alt="Food producer"
-              fill
-              className="object-contain -mt-16" // Negative margin to allow head overflow
+              width={462}
+              height={500}
+              className="object-contain h-[462px] w-[500px]" // Negative margin to allow head overflow
               priority
             />
           </div>
@@ -80,8 +64,6 @@ export const CarouselContent = () => null;
 export const CarouselItem = () => null;
 export const CarouselPrevious = () => null;
 export const CarouselNext = () => null;
-
-
 
 // "use client"
 
@@ -177,4 +159,3 @@ export const CarouselNext = () => null;
 // export const CarouselNext = () => {
 //   return null
 // }
-

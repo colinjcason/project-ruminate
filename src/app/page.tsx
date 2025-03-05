@@ -9,8 +9,6 @@ import Link from "next/link";
   );
 }
 
-
-
 // import Image from "next/image";
 // import Link from "next/link";
 // import DynamicRectangleButton from "../components/buttons/update-rectangle-button";
@@ -18,7 +16,7 @@ import Link from "next/link";
 // import { Carousel } from "../components/ui/carousel";
 // import FAQSPage from "./FAQS/page";
 // import FeedkcabLogo from "../components/logo/FeedkcabLogo";
-// import ForkBanner from "../components/fork-banner"; 
+// import ForkBanner from "../components/fork-banner";
 
 // export default function Page() {
 //   const images = [
