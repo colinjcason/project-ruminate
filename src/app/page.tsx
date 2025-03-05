@@ -4,15 +4,15 @@ import DynamicRectangleButton from "../components/buttons/update-rectangle-butto
 import Navbar from "../components/navbar";
 import { Carousel } from "../components/ui/carousel";
 import FAQSPage from "./FAQS/page";
-import FeedkcabLogo from "../components/logo/FeedkcabLogo";
+
+import producerHero1 from "../assets/images/producer-image-hero-1.svg";
+import producerHero2 from "../assets/images/producer-image-hero-2.svg";
+import producerHero3 from "../assets/images/producer-image-hero-3.svg";
+
 import ForkBanner from "../components/fork-banner";
 
 export default function Page() {
-  const images = [
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Intersect-tUDXbq1y0oySeKjP0jcoZvCf31hIua.png",
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Intersect-tUDXbq1y0oySeKjP0jcoZvCf31hIua.png",
-    "https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Intersect-tUDXbq1y0oySeKjP0jcoZvCf31hIua.png",
-  ];
+  const images = [producerHero1, producerHero2, producerHero3];
 
   return (
     <div className="homepage">
@@ -39,10 +39,9 @@ export default function Page() {
                   textColor="#11639A"
                   iconColor="#11639A"
                   noOutline
-                  />
-
+                />
               </div>
-              <div className="carousel-container">
+              <div className="flex-1">
                 <Carousel images={images} />
               </div>
             </div>
@@ -62,8 +61,6 @@ export default function Page() {
   );
 }
 
-
-
 // import Image from "next/image";
 // import Link from "next/link";
 // import DynamicRectangleButton from "../components/buttons/update-rectangle-button";
@@ -71,7 +68,7 @@ export default function Page() {
 // import { Carousel } from "../components/ui/carousel";
 // import FAQSPage from "./FAQS/page";
 // import FeedkcabLogo from "../components/logo/FeedkcabLogo";
-// import ForkBanner from "../components/fork-banner"; 
+// import ForkBanner from "../components/fork-banner";
 
 // export default function Page() {
 //   const images = [

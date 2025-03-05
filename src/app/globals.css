@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -56,8 +56,6 @@ h3 {
   padding-bottom: 20px;
   flex-direction: column;
   align-items: flex-start;
-  
-
 }
 
 /* Main Content */
@@ -66,13 +64,11 @@ h3 {
   position: relative;
   background-color: #11639a;
   overflow: hidden;
-  
 }
 
 /* Hero Section */
 .hero-section {
   padding-top: 52px;
-  
 }
 
 .hero-container {
@@ -133,7 +129,6 @@ h3 {
   margin-top: -30px;
 }
 
-
 .hero-by {
   display: block;
   color: var(--d-color-base-0, #fff);
@@ -155,7 +150,6 @@ h3 {
   line-height: var(--lineHeights-9, 36px);
   margin-top: 10px;
   padding-left: 80px;
-
 }
 
 /* Fix any duplicate button rendering */
@@ -167,9 +161,12 @@ h3 {
   padding: var(--t-spacing-0, 0px) var(--t-spacing-4, 16px);
   gap: var(--t-spacing-2, 8px);
   border-radius: var(--d-borderRadius-btn, 12px);
-  border: var(--d-borderWidth-btn, 2px) solid var(--d-color-semantic-neutral-content, #222737);
-  background: var(--d-color-base-200, #DEDFE3);
-  box-shadow: 1px 2px 0px 0px #000, 1px 4px 0px 0px #000;
+  border: var(--d-borderWidth-btn, 2px) solid
+    var(--d-color-semantic-neutral-content, #222737);
+  background: var(--d-color-base-200, #dedfe3);
+  box-shadow:
+    1px 2px 0px 0px #000,
+    1px 4px 0px 0px #000;
   cursor: pointer;
   transition: all 0.3s ease;
   margin-left: 80px;
@@ -180,8 +177,9 @@ h3 {
 }
 
 .hero-button.no-outline {
-  box-shadow: 1px 2px 0px 0px #000, 
-  1px 4px 0px 0px #000;
+  box-shadow:
+    1px 2px 0px 0px #000,
+    1px 4px 0px 0px #000;
 }
 
 /* Button Text */
@@ -200,9 +198,6 @@ h3 {
   height: var(--t-spacing-5, 20px);
 }
 
-
-
-
 /* Carousel */
 .carousel-container {
   flex: 1;
@@ -217,17 +212,13 @@ h3 {
   padding-bottom: 20px;
 }
 
-
-
-
-
 /* 🔹 Fork Banner */
 .fork-banner {
   width: 100vw;
   height: 50px;
   display: flex;
   align-items: center;
-  background-color: #F2FCF7;
+  background-color: #f2fcf7;
   overflow: hidden;
   margin-top: 52px;
 }
@@ -240,7 +231,7 @@ h3 {
   align-items: center;
   width: 100%;
   white-space: nowrap;
-  font-family: 'Roboto Flex', sans-serif;
+  font-family: "Roboto Flex", sans-serif;
   font-size: 12px;
   font-weight: 600;
   line-height: 12px;
@@ -272,7 +263,8 @@ h3 {
 }
 
 /* 📱 Responsive Adjustments */
-@media (max-width: 1024px) {  /* Tablets */
+@media (max-width: 1024px) {
+  /* Tablets */
   .fork-banner-content {
     gap: 16px;
   }
@@ -284,7 +276,8 @@ h3 {
   }
 }
 
-@media (max-width: 768px) {  /* Mobile */
+@media (max-width: 768px) {
+  /* Mobile */
   .fork-banner-content {
     gap: 12px;
   }
@@ -296,7 +289,8 @@ h3 {
   }
 }
 
-@media (max-width: 480px) {  /* Small Mobile */
+@media (max-width: 480px) {
+  /* Small Mobile */
   .fork-banner-content {
     gap: 8px;
   }
@@ -307,7 +301,6 @@ h3 {
     font-size: 9px;
   }
 }
-
 
 /* Carousel Container */
 .carousel-container {
@@ -334,7 +327,6 @@ h3 {
   width: 100%;
   height: 100%;
   overflow: hidden;
-
 }
 
 /* Individual Image Slide */
@@ -354,9 +346,10 @@ h3 {
 
 /* Image Styling */
 .carousel-image {
-  width: 377px;
-  height: 472px;
-  background:lightgray -257.617px -14.942px / 208.333% 111.131% no-repeat;
+  width: 462.091px;
+  height: 499.311px;
+  flex-shrink: 0;
+  background: lightgray -257.617px -14.942px / 208.333% 111.131% no-repeat;
   aspect-ratio: 377 / 472;
   object-fit: contain;
   margin-top: -16px; /* Allows head overflow */
@@ -370,8 +363,6 @@ h3 {
   display: inline-flex;
   align-items: center;
   gap: 12px;
-  margin-top: 36px;
-  
 }
 
 /* Individual Dot */
