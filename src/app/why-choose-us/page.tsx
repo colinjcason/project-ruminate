@@ -6,24 +6,24 @@ import cuttingboard from '../../public/assets/cuttingboard.png';
 
 const items = [
   { title: 'Objective', description: 'Evaluators give honest, helpful insights without sugarcoating or bias.' },
-  { title: 'Experienced', description: 'Each evaluator has years of industry experience, ensuring top-tier feedback.' },
-  { title: 'Detailed', description: 'We analyze every aspect of your product, from packaging to consumer appeal.' },
-  { title: 'Actionable', description: 'You receive clear recommendations that drive real improvements.' },
-  { title: 'Supportive', description: 'We guide you through the process to help your product succeed.' }
+  { title: 'Targeted', description: 'Reach evaluators outside your immediate circle, including specific geographic regions.' },
+  { title: 'Timely', description: 'Get feedback when you’re ready—no need to wait for annual events.' },
+  { title: 'Thorough', description: 'Our team organizes raw data into clear, actionable insights.' },
+  { title: 'Representative', description: 'Evaluators reflect not just their expertise but also the preferences of their customer base.' }
 ];
 
 export default function WhyChooseUs() {
   return (
     <div className="why-choose-us-container">
       <main className="flex">
-        {/* Left Side Content (2/3 of the screen) */}
+
         <div className="content-container">
           <h2 className="big-header-normal">
             WHY CHOOSE<br />
             <span className="big-header-wide">FEEDBACK</span>
           </h2>
           <p className="description-text">
-            Our evaluators are seasoned experts in retail, grocery, wholesale, and consulting. Each one represents years of experience and a deep understanding of customer preferences and buying behavior.
+          Many producers rely on personal networks or annual trade shows for feedback. Feedback offers a better way—providing reviews that are:
           </p>
 
           {/* Divider Sections */}
@@ -52,7 +52,27 @@ export default function WhyChooseUs() {
             className="cuttingboard-image"
             width={1530}
             height={840}
-/>
+            />
+
+                {/* Overlapping Cheese Image */}
+          <Image
+            src="/assets/img/cut-cheese.png"
+            alt="cheese"
+            className="cheese-image"
+            width={318}
+            height={308}
+          />
+
+          {/* Overlapping Knife Image */}
+          <Image
+            src="/assets/img/knife.png"
+            alt="knife"
+            className="knife-image"
+            width={246}
+            height={592}
+          />
+
+
       </main>
     </div>
   );
