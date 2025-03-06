@@ -35,7 +35,7 @@ export function Carousel({ images, interval = 5000 }: CarouselProps) {
               alt="Food producer"
               width={462}
               height={500}
-              className="object-contain -mt-16" // Negative margin to allow head overflow
+              className="object-contain h-[462px] w-[500px]" // Negative margin to allow head overflow
               priority
             />
           </div>

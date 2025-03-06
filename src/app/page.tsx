@@ -1,5 +1,3 @@
-import Image from "next/image";
-import Link from "next/link";
 import DynamicRectangleButton from "../components/buttons/update-rectangle-button";
 import Navbar from "../components/navbar";
 import { Carousel } from "../components/ui/carousel";
@@ -41,7 +39,7 @@ export default function Page() {
                   noOutline
                 />
               </div>
-              <div className="flex-1">
+              <div className="carousel-container">
                 <Carousel images={images} />
               </div>
             </div>

@@ -202,9 +202,6 @@ h3 {
 .carousel-container {
   flex: 1;
   position: relative;
-  padding-top: 52px;
-  padding-bottom: 52px;
-  margin-right: -265px;
 }
 
 /* Banner Wrapper */
@@ -308,7 +305,6 @@ h3 {
   height: 499.311px;
   flex-shrink: 0;
   position: relative;
-  margin-top: -40px;
 }
 
 /* Background Blob */
@@ -352,7 +348,6 @@ h3 {
   background: lightgray -257.617px -14.942px / 208.333% 111.131% no-repeat;
   aspect-ratio: 377 / 472;
   object-fit: contain;
-  margin-top: -16px; /* Allows head overflow */
 }
 
 /* Dots Navigation */
