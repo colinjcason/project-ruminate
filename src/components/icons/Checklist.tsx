@@ -1,7 +1,16 @@
 import * as React from "react";
 import { SVGProps } from "react";
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg xmlns="http://www.w3.org/2000/svg" height="200" fill="black" {...props}>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    height="150"
+    fill="none"
+    style={{
+      maxHeight: 500,
+    }}
+    viewBox="40.562 34.572 113.253 137.082"
+    {...props}
+  >
     <g filter="url(#a)">
       <path
         fill="#C1E2DF"
