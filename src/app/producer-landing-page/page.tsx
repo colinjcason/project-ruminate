@@ -10,6 +10,7 @@ import {
   ForkIcon,
   SilverwareIcon,
 } from "@/components/icons";
+import DataBox from "@/components/DataBox";
 
 export default function ProducerLandingPage() {
   return (
@@ -19,7 +20,7 @@ export default function ProducerLandingPage() {
         <section className="flex justify-center bg-semantic-accent-100">
           <div className="px-12 sm:px-24 py-16 flex flex-col gap-y-24">
             <div className="flex flex-col gap-y-5">
-              <h2 className="big-header-normal">
+              <h2 className="big-header-normal text-semantic-accent-900">
                 EXPERIENCED PROFESSIONALS <br></br>EXCEPTIONAL{" "}
                 <span className="big-header-wide">INSIGHTS</span>
               </h2>
@@ -72,14 +73,36 @@ export default function ProducerLandingPage() {
           </div>
         </section>
 
+        {/* 
+          
+          BACKED BY DATA SECTION 
+          
+        */}
+
+        <section className="flex justify-center bg-semantic-secondary-700">
+          <div className="flex flex-col gap-y-5 px-12 sm:px-24 py-16 bg-red-400">
+            <h2 className="big-header-normal text-semantic-secondary-900">
+              BACKED BY DATA <br></br>FUELED BY{" "}
+              <span className="big-header-wide">PASSION</span>
+            </h2>
+
+            <p className="max-w-screen-sm text-white">
+              Standing out in this competitive space requires understanding what
+              customers value and how they define quality. With Feedback, you’ll
+              gain these insights—and a clearer path to success.
+            </p>
+          </div>
+          <DataBox />
+        </section>
+
         {/*
-         *
-         * PRICING PLANS SECTION
-         *
-         * */}
+         
+         PRICING PLANS SECTION
+         
+        */}
         <section className="flex justify-center bg-semantic-secondary-400">
           <div className="px-12 sm:px-24 py-16 flex flex-col gap-y-14">
-            <h2 className="big-header-normal w-max">
+            <h2 className="big-header-normal w-max text-semantic-accent-900">
               PRICING <span className="big-header-wide">PLANS</span>
             </h2>
             <div className="flex flex-col items-center lg:items-start gap-y-24 lg:flex-row md:gap-x-16">
