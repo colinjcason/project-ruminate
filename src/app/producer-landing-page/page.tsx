@@ -4,7 +4,12 @@ import Medal from "../../assets/medal.png";
 import Checklist from "../../assets/checklist.png";
 import Image from "next/image";
 import PricingPlanBox from "@/components/PricingPlanBox";
-import { ForkIcon } from "@/components/icons";
+import {
+  ArrowRightIcon,
+  ForkAndKnifeIcon,
+  ForkIcon,
+  SilverwareIcon,
+} from "@/components/icons";
 
 export default function ProducerLandingPage() {
   return (
@@ -66,13 +71,18 @@ export default function ProducerLandingPage() {
             </div>
           </div>
         </section>
-        {/* PRICING PLANS SECTION */}
+
+        {/*
+         *
+         * PRICING PLANS SECTION
+         *
+         * */}
         <section className="flex justify-center bg-semantic-secondary-400">
-          <div className="px-12 sm:px-24 py-16 flex flex-col gap-y-24">
+          <div className="px-12 sm:px-24 py-16 flex flex-col gap-y-14">
             <h2 className="big-header-normal w-max">
               PRICING <span className="big-header-wide">PLANS</span>
             </h2>
-            <div className="flex flex-col flex-wrap items-center md:items-start gap-y-24 md:flex-row justify-between md:gap-x-16">
+            <div className="flex flex-col items-center lg:items-start gap-y-24 lg:flex-row md:gap-x-16">
               <PricingPlanBox
                 title="Snack"
                 evaluationCost={99}
@@ -112,10 +122,11 @@ export default function ProducerLandingPage() {
                 </ul>
               </PricingPlanBox>
               <PricingPlanBox
-                title="Snack"
+                title="Meal"
                 evaluationCost={349}
                 accentColor="dark-purple"
-                headerIcon={<ForkIcon />}
+                mostPopularOption
+                headerIcon={<ForkAndKnifeIcon />}
               >
                 <p className="text-[1rem] mb-2 leading-[1.25rem]">
                   Ideal for more in-depth feedback and flexibility.
@@ -140,10 +151,10 @@ export default function ProducerLandingPage() {
                 </ul>
               </PricingPlanBox>
               <PricingPlanBox
-                title="Snack"
+                title="Feast"
                 evaluationCost={569}
                 accentColor="dark-blue"
-                headerIcon={<ForkIcon />}
+                headerIcon={<SilverwareIcon />}
               >
                 <p className="text-[1rem] mb-2 leading-[1.25rem]">
                   Perfect for region-specific insights and tailored evaluations.
@@ -171,6 +182,11 @@ export default function ProducerLandingPage() {
                 </ul>
               </PricingPlanBox>
             </div>
+
+            <button className="w-full self-center btn btn-primary sm:w-[21rem] bg-semantic-accent-900 text-semantic-accent-100 text-xl">
+              Get Started
+              <ArrowRightIcon />
+            </button>
           </div>
         </section>
       </main>
