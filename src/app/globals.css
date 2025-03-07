@@ -38,6 +38,10 @@ body {
   line-height: 1.75rem; /* 140% */
 }
 
+p {
+  font-family: var(--font-roboto-flex);
+}
+
 h3 {
   color: var(--d-color-base-1000, #000);
   font-size: 2.25rem;
@@ -69,4 +73,8 @@ h3 {
 .roboto-flex-wide {
   font-weight: 900;
   font-stretch: 125%;
+}
+
+.font-roboto-flex {
+  font-family: var(--font-roboto-flex);
 }

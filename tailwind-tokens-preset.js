@@ -27,7 +27,11 @@ module.exports = {
         "error-bg": "#ff5861",
         "error-content": "#000000",
         "semantic-accent-100": "#E0D9E1",
+        "semantic-accent-900": "#563058",
         "semantic-secondary-100": "#F2FCF7",
+        "semantic-secondary-400": "#C1E2DF",
+        "semantic-secondary-700": "#69A2BC",
+        "semantic-secondary-900": "#11639A",
       },
       borderRadius: {
         box: "1rem",
