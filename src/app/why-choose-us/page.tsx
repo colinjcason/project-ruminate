@@ -46,31 +46,37 @@ export default function WhyChooseUs() {
         </div>
 
         {/* Right Side Image (1/3 of the screen) */}
-        <Image
+        {/* <Image
             src="/assets/img/cuttingboard.png" // No need to import, just use the path
             alt="cutting board"
             className="cuttingboard-image"
             width={1530}
             height={840}
-            />
+            /> */}
 
-                {/* Overlapping Cheese Image */}
-          <Image
+        <div className="cuttingboard-image">
+          <video autoPlay loop muted playsInline className="video-content">
+            <source src="/assets/videos/rotating_cheese_knife.mp4" 
+            type="video/mp4" 
+            />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+          {/* <Image
             src="/assets/img/cut-cheese.png"
             alt="cheese"
             className="cheese-image"
             width={318}
             height={308}
           />
-
-          {/* Overlapping Knife Image */}
+      
           <Image
             src="/assets/img/knife.png"
             alt="knife"
             className="knife-image"
             width={246}
             height={592}
-          />
+          /> */}
 
 
       </main>

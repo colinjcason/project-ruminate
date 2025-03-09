@@ -480,11 +480,10 @@ h3 {
 
 /* Cutting Board - Base Image */
 .cuttingboard-image {
-  width: 1530px;
-  height: 840px;
-  transform: rotate(-90deg);
-  flex-shrink: 0;
-  aspect-ratio: 51/28;
+  width: 600px;
+  margin-top: -100px;
+  margin-left: 100px
+
 }
 
 /* Cheese - Positioned Over Cutting Board */
