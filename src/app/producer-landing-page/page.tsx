@@ -10,16 +10,20 @@ import {
   ForkIcon,
   SilverwareIcon,
 } from "@/components/icons";
+import DataBox from "@/components/DataBox";
+
+import personWithMegaphone from "../../assets/person-with-megaphone.png";
+import chocolateBackground from "../../assets/chocolate.png";
 
 export default function ProducerLandingPage() {
   return (
     <div className="bg-white">
       <main className="flex flex-col">
         {/* EXPERIENCED PROFESSIONALS SECTION */}
-        <section className="flex justify-center bg-semantic-accent-100">
-          <div className="px-12 sm:px-24 py-16 flex flex-col gap-y-24">
+        <section className="flex justify-center bg-semantic-accent-100 z-10">
+          <div className="max-w-[1280px] container px-12 sm:px-24 py-16 flex flex-col gap-y-24">
             <div className="flex flex-col gap-y-5">
-              <h2 className="big-header-normal">
+              <h2 className="big-header-normal text-semantic-accent-900">
                 EXPERIENCED PROFESSIONALS <br></br>EXCEPTIONAL{" "}
                 <span className="big-header-wide">INSIGHTS</span>
               </h2>
@@ -72,17 +76,60 @@ export default function ProducerLandingPage() {
           </div>
         </section>
 
+        {/* 
+          
+          BACKED BY DATA SECTION 
+          
+        */}
+
+        <section className="relative flex justify-center bg-semantic-secondary-700">
+          <div className="relative max-w-[1280px] container flex flex-col items-start gap-y-5 px-12 sm:px-24 py-16 ">
+            <h2 className="big-header-normal text-semantic-secondary-900 z-10">
+              BACKED BY DATA <br></br>FUELED BY{" "}
+              <span className="big-header-wide">PASSION</span>
+            </h2>
+
+            <p className="max-w-screen-sm text-white z-10">
+              Standing out in this competitive space requires understanding what
+              customers value and how they define quality. With Feedback, you’ll
+              gain these insights—and a clearer path to success.
+            </p>
+            <DataBox />
+            <Image
+              className="hidden absolute -bottom-28 -right-28 sm:block z-0"
+              src={personWithMegaphone}
+              alt="a chef with tattoos holding a megaphone to their mouth with their mouth open"
+              height={750}
+              width={1000}
+            />
+          </div>
+          <Image
+            className="hidden sm:absolute top-0 -right-0 xl:block z-0"
+            src={chocolateBackground}
+            alt="a chocolate bar broken into pieces"
+            height={500}
+            width={575}
+          />
+          <Image
+            className="block absolute -top-24 md:top-0 -right-16 xl:hidden z-0"
+            src={chocolateBackground}
+            alt="a chocolate bar broken into pieces"
+            height={250}
+            width={350}
+          />
+        </section>
+
         {/*
-         *
-         * PRICING PLANS SECTION
-         *
-         * */}
-        <section className="flex justify-center bg-semantic-secondary-400">
-          <div className="px-12 sm:px-24 py-16 flex flex-col gap-y-14">
-            <h2 className="big-header-normal w-max">
+         
+         PRICING PLANS SECTION
+         
+        */}
+        <section className="flex justify-center bg-semantic-secondary-400 z-10">
+          <div className="max-w-[1280px] container px-12 sm:px-24 py-16 flex flex-col gap-y-14">
+            <h2 className="big-header-normal w-max text-semantic-accent-900">
               PRICING <span className="big-header-wide">PLANS</span>
             </h2>
-            <div className="flex flex-col items-center lg:items-start gap-y-24 lg:flex-row md:gap-x-16">
+            <div className="flex flex-col flex-wrap items-center lg:items-start gap-y-24 lg:flex-row md:gap-x-8">
               <PricingPlanBox
                 title="Snack"
                 evaluationCost={99}
@@ -183,9 +230,9 @@ export default function ProducerLandingPage() {
               </PricingPlanBox>
             </div>
 
-            <button className="w-full self-center btn btn-primary sm:w-[21rem] bg-semantic-accent-900 text-semantic-accent-100 text-xl">
+            <button className="border-2 border-black w-full self-center btn btn-primary sm:w-[21rem] bg-semantic-accent-900 text-semantic-accent-100 text-xl shadow-[1px_2px_0px_0px_#000,_1px_4px_0px_0px_#000]">
               Get Started
-              <ArrowRightIcon />
+              <ArrowRightIcon height={15} width={15} fill="#e0d9e1" />
             </button>
           </div>
         </section>

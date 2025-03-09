@@ -1,17 +1,10 @@
 import * as React from "react";
 import { SVGProps } from "react";
 const SvgComponent = (props: SVGProps<SVGSVGElement>) => (
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    width="1em"
-    height="1em"
-    fill="none"
-    {...props}
-  >
+  <svg xmlns="http://www.w3.org/2000/svg" width="16px" height="16px" {...props}>
     <path
-      fill="#E0D9E1"
       fillRule="evenodd"
-      d="M3.5 10.145a.75.75 0 0 1 .75-.75h10.638l-4.158-3.96a.75.75 0 1 1 1.04-1.08l5.5 5.25a.75.75 0 0 1 0 1.08l-5.5 5.25a.75.75 0 1 1-1.04-1.08l4.158-3.96H4.25a.75.75 0 0 1-.75-.75Z"
+      d="M12.97 3.97a.75.75 0 0 1 1.06 0l7.5 7.5a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06l6.22-6.22H3a.75.75 0 0 1 0-1.5h16.19l-6.22-6.22a.75.75 0 0 1 0-1.06Z"
       clipRule="evenodd"
     />
   </svg>

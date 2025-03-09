@@ -51,7 +51,6 @@ h3 {
 }
 
 .big-header-normal {
-  color: var(--d-color-semantic-accent-900, #563058);
   font-size: 3.75rem;
   font-style: normal;
   font-weight: 800;
@@ -61,7 +60,6 @@ h3 {
 }
 
 .big-header-wide {
-  color: var(--d-color-semantic-accent-900, #563058);
   font-stretch: 125%;
   font-size: 3.75rem;
   font-weight: 1000;

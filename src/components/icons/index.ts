@@ -1,3 +1,4 @@
+import ArrowLeftIcon from "./ArrowLeft";
 import ArrowRightIcon from "./ArrowRight";
 import ChecklistIcon from "./Checklist";
 import LightbulbIcon from "./Lightbulb";
@@ -7,6 +8,7 @@ import ForkAndKnifeIcon from "./ForkAndKnife";
 import SilverwareIcon from "./Silverware";
 
 export {
+  ArrowLeftIcon,
   ArrowRightIcon,
   ChecklistIcon,
   ForkIcon,
