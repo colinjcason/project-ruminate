@@ -18,11 +18,6 @@ interface DynamicButtonProps {
 
 export const DynamicRectangleButton: React.FC<DynamicButtonProps> = ({
   label,
-  size = "lg",
-  bgColor = "#FFFFFF",
-  textColor = "#11639A",
-  iconColor = "#11639A",
-  outlineColor = "#222737",
   noOutline = false,
   onClick,
   className = "",

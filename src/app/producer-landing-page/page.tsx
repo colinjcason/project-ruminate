@@ -14,12 +14,67 @@ import DataBox from "@/components/DataBox";
 
 import personWithMegaphone from "../../assets/person-with-megaphone.png";
 import chocolateBackground from "../../assets/chocolate.png";
+import FAQSPage from "../FAQS/page";
+import ForkBanner from "@/components/fork-banner";
+import { Carousel } from "@/components/ui/carousel";
+import DynamicRectangleButton from "@/components/buttons/update-rectangle-button";
+
+import producerHero1 from "../../assets/images/producer-image-hero-1.svg";
+import producerHero2 from "../../assets/images/producer-image-hero-2.svg";
+import producerHero3 from "../../assets/images/producer-image-hero-3.svg";
+import Navbar from "@/components/navbar";
 
 export default function ProducerLandingPage() {
+  const images = [producerHero1, producerHero2, producerHero3];
+
   return (
     <div className="bg-white">
       <main className="flex flex-col">
+        <section className="hero-section">
+          <Navbar />
+
+          <div className="main-content">
+            <div className="hero-box">
+              <div className="hero-container">
+                <div className="hero-content flex-col bg-blue-400 lg:flex-row">
+                  <div className="text-container bg-green-400">
+                    <h1 className="big-header-normal">
+                      FOR <span className="big-header-wide">PRODUCERS</span>
+                      <br></br> BY PRODUCERS
+                    </h1>
+                    <h1 className="hero-heading">
+                      <span className="hero-for sm:text-7xl">FOR</span>
+                      <span className="hero-producers sm:text-7xl">
+                        PRODUCERS
+                      </span>
+                    </h1>
+                    <h2 className="hero-by">BY PRODUCERS</h2>
+                    <p className="hero-subtext">
+                      Refine your product for a better food system
+                    </p>
+                    <DynamicRectangleButton
+                      className="hero-button"
+                      label="Sign Up"
+                      size="lg"
+                      bgColor="#FFFFFF"
+                      textColor="#11639A"
+                      iconColor="#11639A"
+                      noOutline
+                    />
+                  </div>
+                  <div className="carousel-container bg-red-200">
+                    <Carousel images={images} />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="banner-wrapper">
+              <ForkBanner />
+            </div>
+          </div>
+        </section>
         {/* EXPERIENCED PROFESSIONALS SECTION */}
+
         <section className="flex justify-center bg-semantic-accent-100 z-10">
           <div className="max-w-[1280px] container px-12 sm:px-24 py-16 flex flex-col gap-y-24">
             <div className="flex flex-col gap-y-5">
@@ -234,6 +289,11 @@ export default function ProducerLandingPage() {
               Get Started
               <ArrowRightIcon height={15} width={15} fill="#e0d9e1" />
             </button>
+          </div>
+        </section>
+        <section>
+          <div>
+            <FAQSPage />
           </div>
         </section>
       </main>

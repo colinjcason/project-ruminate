@@ -20,9 +20,9 @@ export function Carousel({ images, interval = 5000 }: CarouselProps) {
   }, [images.length, interval]);
 
   return (
-    <div className="carousel-container">
+    <div className="relative carousel-container w-[465px] h-[500px]">
       {/* Image Container */}
-      <div className="relative w-full h-full overflow-visible">
+      <div className="relative overflow-visible">
         {images.map((src, index) => (
           <div
             key={index}
@@ -33,9 +33,9 @@ export function Carousel({ images, interval = 5000 }: CarouselProps) {
             <Image
               src={src || "/placeholder.svg"}
               alt="Food producer"
-              width={462}
               height={500}
-              className="object-contain h-[462px] w-[500px]" // Negative margin to allow head overflow
+              width={465}
+              className="object-contained object-top" // Negative margin to allow head overflow
               priority
             />
           </div>

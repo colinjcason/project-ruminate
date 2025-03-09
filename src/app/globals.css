@@ -104,9 +104,8 @@ h3 {
 }
 
 /* Main Page */
-.homepage {
+.hero-section {
   display: flex;
-  width: 1280px;
   padding-bottom: 20px;
   flex-direction: column;
   align-items: flex-start;
@@ -121,7 +120,7 @@ h3 {
 }
 
 /* Hero Section */
-.hero-section {
+.hero-box {
   padding-top: 52px;
 }
 
@@ -140,7 +139,6 @@ h3 {
   display: flex;
   align-items: start;
   gap: -40px;
-  width: 100%;
 }
 
 .text-container {
@@ -163,7 +161,6 @@ h3 {
 .hero-for {
   color: var(--d-color-base-0, #fff);
   font-family: "Roboto Flex";
-  font-size: 82px;
   font-style: normal;
   font-weight: 800;
   line-height: 100%; /* 72px */
@@ -175,7 +172,6 @@ h3 {
 .hero-producers {
   color: var(--d-color-base-0, #fff);
   font-family: "Roboto Flex";
-  font-size: 82px;
   font-style: normal;
   font-weight: 1000;
   line-height: 100%; /* 72px */
@@ -250,12 +246,6 @@ h3 {
 .hero-button svg {
   width: var(--t-spacing-5, 20px);
   height: var(--t-spacing-5, 20px);
-}
-
-/* Carousel */
-.carousel-container {
-  flex: 1;
-  position: relative;
 }
 
 /* Banner Wrapper */
@@ -358,10 +348,9 @@ h3 {
 
 /* Carousel Container */
 .carousel-container {
-  width: 441.091px;
-  height: 499.311px;
   flex-shrink: 0;
   position: relative;
+  flex: 1;
 }
 
 /* Background Blob */
