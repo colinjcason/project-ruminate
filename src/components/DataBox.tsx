@@ -64,7 +64,7 @@ function DataBox() {
   }
 
   return (
-    <div className="flex flex-col items-end">
+    <div className="flex flex-col items-end z-10">
       <div className="flex">
         <button className="btn btn-ghost" onClick={showPrevious}>
           <ArrowLeftIcon height={24} width={24} fill="black" />

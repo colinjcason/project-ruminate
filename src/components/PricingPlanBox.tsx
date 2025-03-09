@@ -9,6 +9,7 @@ type Props = {
   headerIcon?: React.ReactElement;
   accentColor?: "light-blue" | "dark-purple" | "dark-blue";
   children?: React.ReactNode;
+  className?: string;
 };
 
 function PricingPlanBox({
@@ -18,6 +19,7 @@ function PricingPlanBox({
   headerIcon,
   accentColor = "light-blue",
   children,
+  className = "",
 }: Props) {
   const textColors = {
     "light-blue": "text-semantic-secondary-700",
@@ -38,7 +40,9 @@ function PricingPlanBox({
   };
 
   return (
-    <div className="relative flex flex-col bg-semantic-secondary-100 min-w-[18rem] max-w-[21rem] min-h-[36rem] text-base-0 rounded-2xl shadow-[-6px_6px_0px_0px_#000]">
+    <div
+      className={`flex-1 relative flex flex-col bg-semantic-secondary-100 min-w-[18rem] min-h-[36rem] text-base-0 rounded-2xl shadow-[-6px_6px_0px_0px_#000] ${className}`}
+    >
       <div
         className={`${bgColors[accentColor]} px-8 py-3 gap-x-2 flex rounded-tr-2xl rounded-tl-2xl border-black border-[3px]`}
       >
