@@ -3,5 +3,7 @@ export default async function Layout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  return <div className="flex flex-col h-screen">{children}</div>;
+  return (
+    <div className="flex flex-col h-screen overflow-x-hidden">{children}</div>
+  );
 }
