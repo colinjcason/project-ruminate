@@ -1,29 +1,47 @@
-import '../globals.css';
-import Divider from '@/components/Divider';
-import React from 'react';
-import Image from 'next/image';
-import cuttingboard from '../../public/assets/cuttingboard.png'; 
+import "../globals.css";
+import Divider from "@/components/Divider";
+import React from "react";
 
 const items = [
-  { title: 'Objective', description: 'Evaluators give honest, helpful insights without sugarcoating or bias.' },
-  { title: 'Targeted', description: 'Reach evaluators outside your immediate circle, including specific geographic regions.' },
-  { title: 'Timely', description: 'Get feedback when you’re ready—no need to wait for annual events.' },
-  { title: 'Thorough', description: 'Our team organizes raw data into clear, actionable insights.' },
-  { title: 'Representative', description: 'Evaluators reflect not just their expertise but also the preferences of their customer base.' }
+  {
+    title: "Objective",
+    description:
+      "Evaluators give honest, helpful insights without sugarcoating or bias.",
+  },
+  {
+    title: "Targeted",
+    description:
+      "Reach evaluators outside your immediate circle, including specific geographic regions.",
+  },
+  {
+    title: "Timely",
+    description:
+      "Get feedback when you’re ready—no need to wait for annual events.",
+  },
+  {
+    title: "Thorough",
+    description: "Our team organizes raw data into clear, actionable insights.",
+  },
+  {
+    title: "Representative",
+    description:
+      "Evaluators reflect not just their expertise but also the preferences of their customer base.",
+  },
 ];
 
 export default function WhyChooseUs() {
   return (
     <div className="why-choose-us-container">
       <main className="flex">
-
         <div className="content-container">
           <h2 className="big-header-normal">
-            WHY CHOOSE<br />
+            WHY CHOOSE
+            <br />
             <span className="big-header-wide">FEEDBACK</span>
           </h2>
           <p className="description-text">
-          Many producers rely on personal networks or annual trade shows for feedback. Feedback offers a better way—providing reviews that are:
+            Many producers rely on personal networks or annual trade shows for
+            feedback. Feedback offers a better way—providing reviews that are:
           </p>
 
           {/* Divider Sections */}
@@ -56,13 +74,14 @@ export default function WhyChooseUs() {
 
         <div className="cuttingboard-image">
           <video autoPlay loop muted playsInline className="video-content">
-            <source src="/assets/videos/rotating_cheese_knife.mp4" 
-            type="video/mp4" 
+            <source
+              src="/assets/videos/rotating_cheese_knife.mp4"
+              type="video/mp4"
             />
             Your browser does not support the video tag.
           </video>
         </div>
-          {/* <Image
+        {/* <Image
             src="/assets/img/cut-cheese.png"
             alt="cheese"
             className="cheese-image"
@@ -77,8 +96,6 @@ export default function WhyChooseUs() {
             width={246}
             height={592}
           /> */}
-
-
       </main>
     </div>
   );
