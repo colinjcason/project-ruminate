@@ -30,26 +30,23 @@ export default function ProducerLandingPage() {
   return (
     <div className="bg-white">
       <main className="flex flex-col">
-        <section className="hero-section">
+        <section className="flex hero-section lg:h-screen bg-semantic-secondary-900">
           <Navbar />
 
-          <div className="main-content">
-            <div className="hero-box">
+          <div className="relative self-center max-w-[1280px] h-full container px-12 sm:px-24 py-16 flex flex-col gap-y-8 lg:gap-y-24">
+            <div className="hero-box z-10">
               <div className="hero-container">
-                <div className="hero-content flex-col bg-blue-400 lg:flex-row">
-                  <div className="text-container bg-green-400">
-                    <h1 className="big-header-normal">
-                      FOR <span className="big-header-wide">PRODUCERS</span>
-                      <br></br> BY PRODUCERS
-                    </h1>
-                    <h1 className="hero-heading">
-                      <span className="hero-for sm:text-7xl">FOR</span>
-                      <span className="hero-producers sm:text-7xl">
+                <div className="flex-col lg:flex-row">
+                  <div className="flex-1 text-container">
+                    <h1 className="big-header-normal text-white xl:text-7xl max-w-screen-md">
+                      FOR{" "}
+                      <span className="big-header-wide xl:text-7xl">
                         PRODUCERS
                       </span>
+                      <br></br> BY PRODUCERS
                     </h1>
-                    <h2 className="hero-by">BY PRODUCERS</h2>
-                    <p className="hero-subtext">
+
+                    <p className="hero-subtext max-w-screen-md sm:text-3xl">
                       Refine your product for a better food system
                     </p>
                     <DynamicRectangleButton
@@ -62,15 +59,15 @@ export default function ProducerLandingPage() {
                       noOutline
                     />
                   </div>
-                  <div className="carousel-container bg-red-200">
-                    <Carousel images={images} />
-                  </div>
                 </div>
               </div>
             </div>
-            <div className="banner-wrapper">
-              <ForkBanner />
+            <div className="self-center sm:self-end lg:absolute right-0 -z-0">
+              <Carousel images={images} />
             </div>
+          </div>
+          <div className="banner-wrapper">
+            <ForkBanner />
           </div>
         </section>
         {/* EXPERIENCED PROFESSIONALS SECTION */}
