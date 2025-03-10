@@ -9,6 +9,13 @@ export default {
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   presets: [tokenTheme],
+  theme: {
+    extend: {
+      fontFamily: {
+        roboto: ["Roboto Flex", "sans-serif"],
+      },
+    },
+  },
   daisyui: {
     themes: [
       {
