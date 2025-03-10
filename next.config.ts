@@ -5,12 +5,16 @@ const nextConfig: NextConfig = {
     domains: ["hebbkx1anhila5yf.public.blob.vercel-storage.com"], // Add this line
   },
   webpack(config) {
-    config.module.rules.push({
-      test: /\.svg$/,
-      issuer: /\.[jt]sx?$/,
-      use: ['@svgr/webpack'],
-    });
+    config.module.rules.push(
+      {
+        test: /\.svg$/,
+        issuer: /\.[jt]sx?$/,
+        use: ["@svgr/webpack"],
+      },
+      { test: /\.svg$/, loader: "svg-inline-loader" }
+    );
     return config;
-  },};
+  },
+};
 
 export default nextConfig;
