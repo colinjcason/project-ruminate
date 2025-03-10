@@ -380,7 +380,7 @@ export default function ProducerLandingPage() {
 
             <button className="border-2 border-black w-full self-center btn btn-primary sm:w-[21rem] bg-semantic-accent-900 text-semantic-accent-100 text-xl shadow-[1px_2px_0px_0px_#000,_1px_4px_0px_0px_#000]">
               Get Started
-              <ArrowRightIcon height={15} width={15} fill="#e0d9e1" />
+              <ArrowRightIcon height={20} width={20} fill="#e0d9e1" />
             </button>
           </div>
         </section>

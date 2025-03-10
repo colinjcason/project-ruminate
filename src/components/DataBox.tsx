@@ -5,6 +5,10 @@ import Box from "./Box";
 import { ArrowLeftIcon, ArrowRightIcon } from "./icons";
 import Link from "next/link";
 
+type Props = {
+  autoplay?: boolean;
+};
+
 const foodData = [
   {
     title: "$207B",
@@ -36,14 +40,15 @@ const foodData = [
   },
 ];
 
-function DataBox() {
+function DataBox({ autoplay = false }: Props) {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     // Show a new fact every 5 seconds
+    if (!autoplay) return;
     const interval = setInterval(() => showNext(), 5000);
     return () => clearInterval(interval);
-  }, []);
+  }, [autoplay]);
 
   function showNext() {
     setCurrentIndex((prev) => {
