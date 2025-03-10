@@ -31,8 +31,8 @@ const items = [
 
 export default function WhyChooseUs() {
   return (
-    <div className="why-choose-us-container">
-      <main className="flex">
+    <section className="why-choose-us">
+      <div className="flex">
         <div className="content-container">
           <h2 className="big-header-normal">
             WHY CHOOSE
@@ -96,7 +96,7 @@ export default function WhyChooseUs() {
             width={246}
             height={592}
           /> */}
-      </main>
-    </div>
+      </div>
+    </section>
   );
 }
