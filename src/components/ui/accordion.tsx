@@ -14,19 +14,23 @@ const Accordion: React.FC<AccordionProps> = ({
   onClick,
 }) => {
   return (
-    <div className="w-[764px] border-2 border-black rounded-[16px] overflow-hidden">
+    <div className="border-2 border-black rounded-[16px] overflow-hidden">
       <div
-        className={`collapse collapse-arrow ${isOpen ? "collapse-open" : ""} bg-secondary border-none`}
+        className={`collapse collapse-arrow ${
+          isOpen ? "collapse-open" : ""
+        } bg-secondary border-none`}
       >
         <input type="checkbox" checked={isOpen} onChange={onClick} />
         <div
           className={`collapse-title flex items-center justify-between text-xl font-medium p-[24px] text-secondary-content bg-secondary
-          ${isOpen ? "rounded-t-[16px] rounded-b-none" : "rounded-[16px]"} w-full b`}
+          ${
+            isOpen ? "rounded-t-[16px] rounded-b-none" : "rounded-[16px]"
+          } w-full b`}
         >
           {title}
         </div>
         <div className="collapse-content bg-[var(--d-color-semantic-secondary-100,#F2FCF7)] rounded-b-[16px]">
-          <div className="w-[653px] p-[12px_24px_24px_24px] text-[var(--base-content,#222737)] font-[var(--fontFamilies-roboto-flex,'Roboto Flex')] text-[var(--fontSize-2,16px)] font-[400] leading-[var(--lineHeights-5,20px)]">
+          <div className="p-[12px_24px_24px_24px] text-[var(--base-content,#222737)] font-[var(--fontFamilies-roboto-flex,'Roboto Flex')] text-[var(--fontSize-2,16px)] font-[400] leading-[var(--lineHeights-5,20px)]">
             {body}
           </div>
         </div>

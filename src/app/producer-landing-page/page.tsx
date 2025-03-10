@@ -58,7 +58,7 @@ export default function ProducerLandingPage() {
   return (
     <div className="bg-white">
       <main className="flex flex-col">
-        <section className="flex hero-section lg:h-screen bg-semantic-secondary-900">
+        <section className="lg:max-h-[1080px] lg:h-screen flex hero-section bg-semantic-secondary-900">
           <Navbar />
 
           <div className="relative self-center max-w-[1280px] h-full container px-12 sm:px-24 py-16 flex flex-col gap-y-8 lg:gap-y-24">
@@ -384,10 +384,13 @@ export default function ProducerLandingPage() {
             </button>
           </div>
         </section>
-        <section>
-          <div>
+        <section className="flex justify-center" style={{
+        backgroundColor: "var(--d-color-semantic-secondary-800, #3D83AB)",
+        backgroundImage:
+          "linear-gradient(var(--d-color-semantic-secondary-700, #69A2BC) 1px, transparent 1px), linear-gradient(90deg, var(--d-color-semantic-secondary-700, #69A2BC) 1px, transparent 1px)",
+        backgroundSize: "35px 35px",
+      }}>
             <FAQSPage />
-          </div>
         </section>
       </main>
     </div>
