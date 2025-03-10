@@ -19,9 +19,9 @@ import ForkBanner from "@/components/fork-banner";
 import { Carousel } from "@/components/ui/carousel";
 import DynamicRectangleButton from "@/components/buttons/update-rectangle-button";
 
-import producerHero1 from "../../assets/images/producer-image-hero-1.svg";
-import producerHero2 from "../../assets/images/producer-image-hero-2.svg";
-import producerHero3 from "../../assets/images/producer-image-hero-3.svg";
+import producerHero1 from "../../assets/producer-image-hero.png";
+import producerHero2 from "../../assets/producer-image-hero2.png";
+import producerHero3 from "../../assets/producer-image-hero3.png";
 import Navbar from "@/components/navbar";
 
 export default function ProducerLandingPage() {

@@ -1,10 +1,10 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 interface CarouselProps {
-  images: string[];
+  images: string[] | StaticImageData[];
   interval?: number;
 }
 
